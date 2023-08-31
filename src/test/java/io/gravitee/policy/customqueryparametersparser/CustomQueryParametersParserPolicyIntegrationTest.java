@@ -98,8 +98,8 @@ public class CustomQueryParametersParserPolicyIntegrationTest extends AbstractGa
                 new LinkedMultiValueMap<>(Map.of("filter", List.of("200-299;300-399;500-599")))
             ),
             Arguments.of(
-                "?tagNames=GIO%20APIM%20GW*;GIO%20%20APIM%20REST*",
-                new LinkedMultiValueMap<>(Map.of("tagNames", List.of("GIO%20APIM%20GW*;GIO%20A%20PIM%20REST*")))
+                "?tagNames=GIO%20APIM%20GW*;GIO%20APIM%20REST*",
+                new LinkedMultiValueMap<>(Map.of("tagNames", List.of("GIO%20APIM%20GW*;GIO%20APIM%20REST*")))
             ),
             Arguments.of(
                 "?$expand=Person($select=SaleChannel,Id;$expand=age)",
