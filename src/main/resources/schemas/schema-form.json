@@ -1,5 +1,5 @@
 {
-  "type" : "object",
-  "id" : "urn:jsonschema:CustomQueryParametersParser",
-  "properties" : {}
+    "type": "object",
+    "id": "urn:jsonschema:CustomQueryParametersParser",
+    "properties": {}
 }

@@ -1,0 +1,73 @@
+{
+    "id": "my-api-v4",
+    "name": "my-api",
+    "apiVersion": "1.0",
+    "definitionVersion": "4.0.0",
+    "type": "proxy",
+    "analytics": {},
+    "listeners": [
+        {
+            "type": "http",
+            "paths": [
+                {
+                    "path": "/test-v4"
+                }
+            ],
+            "entrypoints": [
+                {
+                    "type": "http-proxy"
+                }
+            ]
+        }
+    ],
+    "endpointGroups": [
+        {
+            "name": "default",
+            "type": "http-proxy",
+            "endpoints": [
+                {
+                    "name": "default",
+                    "type": "http-proxy",
+                    "weight": 1,
+                    "inheritConfiguration": false,
+                    "configuration": {
+                        "target": "http://localhost:8080/team"
+                    }
+                }
+            ]
+        }
+    ],
+    "flows": [
+        {
+            "name": "flow-1",
+            "enabled": true,
+            "selectors": [
+                {
+                    "type": "http",
+                    "path": "/",
+                    "pathOperator": "STARTS_WITH"
+                }
+            ],
+            "request": [
+                {
+                    "name": "Compute query param to accept ; as a normal char",
+                    "description": "",
+                    "enabled": true,
+                    "policy": "custom-query-parameters-parser",
+                    "configuration": {}
+                }
+            ],
+            "response": [
+                {
+                    "name": "Query params to header",
+                    "description": "",
+                    "enabled": true,
+                    "policy": "query-params-to-header",
+                    "configuration": {}
+                }
+            ],
+            "subscribe": [],
+            "publish": []
+        }
+    ]
+}

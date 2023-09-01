@@ -36,7 +36,8 @@ WARNING: Policies are executed after flow evaluation: for a condition on a flow 
 |===
 | Plugin version | APIM version
 
-| Up to 1.x      | 3.20.x to latest
+| Up to 1.x         | 3.20.x
+| 2.x               | 4.0.x to latest
 |===
 
 == Errors
