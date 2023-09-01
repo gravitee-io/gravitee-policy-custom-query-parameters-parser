@@ -1,3 +1,16 @@
+# [2.0.0](https://github.com/gravitee-io/gravitee-policy-custom-query-parameters-parser/compare/1.0.1...2.0.0) (2023-09-01)
+
+
+### chore
+
+* bump dependencies to work with apim 4.0.x ([7c058b0](https://github.com/gravitee-io/gravitee-policy-custom-query-parameters-parser/commit/7c058b0b2d31d2db2eb18e744691dd9299df3520))
+
+
+### BREAKING CHANGES
+
+* require java 17, works from apim 4.0.x
+https://gravitee.atlassian.net/browse/APIM-2218
+
 ## [1.0.1](https://github.com/gravitee-io/gravitee-policy-custom-query-parameters-parser/compare/1.0.0...1.0.1) (2023-09-01)
 
 
