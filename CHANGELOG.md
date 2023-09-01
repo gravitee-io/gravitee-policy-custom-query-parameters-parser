@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/gravitee-io/gravitee-policy-custom-query-parameters-parser/compare/1.0.0...1.0.1) (2023-09-01)
+
+
+### Bug Fixes
+
+* fix policy qualified name in plugin.properties ([aa0f4ec](https://github.com/gravitee-io/gravitee-policy-custom-query-parameters-parser/commit/aa0f4ec030a5583dae415871cab1735c950068ca))
+
 # 1.0.0 (2023-09-01)
 
 
