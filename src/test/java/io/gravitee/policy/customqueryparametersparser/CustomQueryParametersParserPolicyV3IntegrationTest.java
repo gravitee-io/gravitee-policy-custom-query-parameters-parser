@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.gravitee.policy.customqueryparametersparser;/**
+package io.gravitee.policy.customqueryparametersparser; /**
  * Copyright (C) 2015 The Gravitee team (http://gravitee.io)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -97,8 +97,9 @@ public class CustomQueryParametersParserPolicyV3IntegrationTest extends Abstract
                 expectedQueryParameters.forEach((expectedKey, expectedValue) -> {
                     assertThat(response.headers().contains(expectedKey)).isTrue();
                     // The policy is doing a toString to fill the headers, so we need to handle the null case
-                    assertThat(response.headers().get(expectedKey))
-                        .isEqualTo(expectedValue.isEmpty() ? "[null]" : expectedValue.toString());
+                    assertThat(response.headers().get(expectedKey)).isEqualTo(
+                        expectedValue.isEmpty() ? "[null]" : expectedValue.toString()
+                    );
                 });
                 return true;
             })
