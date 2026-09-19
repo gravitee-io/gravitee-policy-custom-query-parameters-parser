@@ -31,13 +31,14 @@ Semicolon character (`;`) is not considered as a separator:
 
 WARNING: Policies are executed after flow evaluation: for a condition on a flow using Expression Language to test query parameters, they will be extracted the regular way by the Gateway, with `;` as a separator.
 
-== Compatibility with APIM
+== Compatibility matrix
 
 |===
-| Plugin version | APIM version
+| Plugin version | APIM            | Java version
 
-| Up to 1.x         | 3.20.x
-| 2.x               | 4.0.x to latest
+| 3.x            | 4.7.x to latest | 21
+| 2.x            | 4.0.x to latest | 17
+| Up to 1.x      | 3.20.x          | 11
 |===
 
 == Errors
