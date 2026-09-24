@@ -1,3 +1,16 @@
+# [3.0.0](https://github.com/gravitee-io/gravitee-policy-custom-query-parameters-parser/compare/2.0.0...3.0.0) (2026-09-24)
+
+
+* chore(deps)!: move to the gravitee orb 5 and parent 24 ([1988545](https://github.com/gravitee-io/gravitee-policy-custom-query-parameters-parser/commit/19885454253332a36dd3c46eeafd15a5c9662047))
+
+
+### BREAKING CHANGES
+
+* the artifact is now compiled for Java 21, up from Java 17, and
+requires a Java 21 runtime or later.
+
+https://gravitee.atlassian.net/browse/BX-403
+
 # [2.0.0](https://github.com/gravitee-io/gravitee-policy-custom-query-parameters-parser/compare/1.0.1...2.0.0) (2023-09-01)
 
 
